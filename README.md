@@ -1,4 +1,5 @@
 # weather-app
 
-<a href="https://sametert.github.io/weather-app/">Live</a>
+# Live
+[You can find the live version](https://sametert.github.io/weather-app/)
 
