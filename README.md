@@ -1,4 +1,4 @@
 # weather-app
 
-<h2>HSDAGSAUD</h2>
-https://sametert.github.io/weather-app/
+<a href="https://sametert.github.io/weather-app/">Live</a>
+
