@@ -8,7 +8,7 @@ const minmax = document.querySelector(".minmax");
 //default
 
 const weatherDefault = () => {
-    let request = `${api}ankara&appid=${apiKey}&units=metric&lang=tr`;
+    let request = `${api}new%20york&appid=${apiKey}&units=metric&lang=tr`;
 
     fetch(request)
         .then(response => response.json())
