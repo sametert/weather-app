@@ -21,7 +21,6 @@ const weatherDefault = () => {
         minmax.innerHTML = `${Math.floor(data.main.temp_min)}°C / ${Math.floor(data.main.temp_max)}°C`;
     }
 }
-
 weatherDefault();
 
 
