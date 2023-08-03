@@ -5,6 +5,26 @@ const city = document.querySelector(".city");
 const desc = document.querySelector(".desc");
 const minmax = document.querySelector(".minmax");
 
+//default
+
+const weatherDefault = () => {
+    let request = `${api}ankara&appid=${apiKey}&units=metric&lang=tr`;
+
+    fetch(request)
+        .then(response => response.json())
+        .then(data => weatherDflt(data));
+
+
+    const weatherDflt = (data) => {
+        temp.innerHTML   =  Math.floor(data.main.temp) + "°C";
+        desc.innerHTML   = data.weather[0].description;
+        minmax.innerHTML = `${Math.floor(data.main.temp_min)}°C / ${Math.floor(data.main.temp_max)}°C`;
+    }
+}
+
+weatherDefault();
+
+
 const setQuery = e => {
     if (e.keyCode == "13") {
         getResult(input.value);
